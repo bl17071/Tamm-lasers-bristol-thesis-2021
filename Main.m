@@ -1,7 +1,9 @@
 %Original main code by Laurent Nevou
 %Github repository link: https://github.com/LaurentNevou
-%Link for this code:
+%Link for specific code:
 %https://github.com/LaurentNevou/Light_WaveTransmission1D_dispersion
+%Link for Full Tamm code:
+%https://github.com/bl17071/Tamm-lasers-bristol-thesis-2021
 
 clear all
 close all

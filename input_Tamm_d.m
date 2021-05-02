@@ -95,11 +95,11 @@ for jj=1:N_DBRp
   DBR_p = [ DBR_p ; DBRp ];
 end
 
-%Structure arrangement
+%Structure arrangement %Au = gold %Ag= silver
 
-%layer=[ l3 n3 ; DBR_p ];                % without the gold layer (DBR Only)
-%layer=[ lAu nkAg ; l3 n3 ; DBR_p ];    %metal layer + spacer layer
-%layer=[ lAu nkAu ; l3 n3 ; DBR_p ]; %Au = gold %Ag= silver
+%layer=[ l3 n3 ; DBR_p ];                % without the gold layer (DBR and spacer Only)
+%layer=[ lAu nkAg ; l3 n3 ; DBR_p ];    %silver layer + spacer layer + DBR
+%layer=[ lAu nkAu ; l3 n3 ; DBR_p ];  %Gold + spacer + DBR
 layer=[ lAu nkAu ; DBR_n ]; %no spacer
 
 
