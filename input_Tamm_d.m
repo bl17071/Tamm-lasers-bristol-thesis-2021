@@ -4,6 +4,12 @@
 %https://github.com/LaurentNevou/Light_WaveTransmission1D_dispersion
 %All material values for refractive index and extinction coefficient is
 %taken from refractiveindex.info
+%Modifications from source code: 
+%Added data dispersion for silver and gold and their respective plot
+%Added a spacer layer, length of metal and spacer layer were also added
+%Changed the arrangement of the structure from VCSEL to Tamm
+
+
 
 nL=1; %default value 1
 nR=3; %default value 3

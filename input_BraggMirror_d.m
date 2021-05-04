@@ -4,6 +4,9 @@
 %https://github.com/LaurentNevou/Light_WaveTransmission1D_dispersion
 %All material values for refractive index and extinction coefficient is
 %taken from refractiveindex.info
+%Modifications from source code:
+%Added dispersion for AlN, GaN, ZnS, MgF2 for comparison
+%Changed the values of input parameter for central wavelength and number of pairs
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%% Bragg Mirror structure %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -90,6 +93,7 @@ lambda0=1300e-9;      % Central wavelength
 l1=1*lambda0/(4*abs(mean(n1)));   % thickness at lambda/4
 l2=1*lambda0/(4*abs(mean(n2)));   % thickness at lambda/4
 
+%structure
 layer=[
 l1   n1
 l2   n2

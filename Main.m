@@ -4,6 +4,9 @@
 %https://github.com/LaurentNevou/Light_WaveTransmission1D_dispersion
 %Link for Full Tamm code:
 %https://github.com/bl17071/Tamm-lasers-bristol-thesis-2021
+%Modifications from source code:
+%Removed irrelevant codes and changed presentation of plots.
+%Change the input parameter for central wavelength
 
 clear all
 close all
