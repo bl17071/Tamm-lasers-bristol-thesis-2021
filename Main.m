@@ -1,35 +1,35 @@
 %Original main code by Laurent Nevou
 %Github repository link: https://github.com/LaurentNevou
+
 %Link for specific code:
 %https://github.com/LaurentNevou/Light_WaveTransmission1D_dispersion
+
 %Link for Full Tamm code:
 %https://github.com/bl17071/Tamm-lasers-bristol-thesis-2021
+
 %Modifications from source code:
-%Removed irrelevant codes and changed presentation of plots.
-%Change the input parameter for central wavelength
+%Removed irrelevant structure and changed presentation of plots.
+%Change the input parameter for central wavelength and lambda range
 
 clear all
 close all
 clc
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 lambda=(1000:0.1:1600)*1e-9; %Lambda range
 dz=1e-9;
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%% Choose your structure %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %comment one of these structures
 
 %input_BraggMirror_d
 input_Tamm_d
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% Discretisation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% here, I descretize the grid z and the optical index n
+
+% descretize the grid z and the optical index n
 
 t  = layer(:,1);
 nt = layer(:,2:end);

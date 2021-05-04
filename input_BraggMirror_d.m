@@ -1,15 +1,16 @@
 %Original main code by Laurent Nevou
 %Github repository link: https://github.com/LaurentNevou
+
 %Link for specific code:
 %https://github.com/LaurentNevou/Light_WaveTransmission1D_dispersion
+
 %All material values for refractive index and extinction coefficient is
 %taken from refractiveindex.info
+
 %Modifications from source code:
 %Added dispersion for AlN, GaN, ZnS, MgF2 for comparison
 %Changed the values of input parameter for central wavelength and number of pairs
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%% Bragg Mirror structure %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 nL=1; %nL and nR parameters are for TMM function use, 1 is the boundary condition of air on both left and right spacer
 nR=1;
@@ -61,7 +62,6 @@ nkMgF2 = nM + kM*1i;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 figure
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 subplot(2,1,1)
 hold on;grid on;box on;
@@ -86,14 +86,13 @@ ylabel('Extinction coefficient')
 legend('imag-GaAs','imag-AlAs')
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 n1=nkGaAs; %Refractive index and extinction coefficient of GaAs
 n2=nkAlAs; %Refractive index and extinction coefficient of AlAs
 lambda0=1300e-9;      % Central wavelength
 l1=1*lambda0/(4*abs(mean(n1)));   % thickness at lambda/4
 l2=1*lambda0/(4*abs(mean(n2)));   % thickness at lambda/4
 
-%structure
+%structure arrangement
 layer=[
 l1   n1
 l2   n2

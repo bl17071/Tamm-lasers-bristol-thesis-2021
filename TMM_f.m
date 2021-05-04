@@ -1,6 +1,7 @@
 %Original main code by Laurent Nevou
 %Github repository link: https://github.com/LaurentNevou
-%Link for this code:
+
+%Link for specific code:
 %https://github.com/LaurentNevou/Light_WaveTransmission1D_dispersion
 
 %Main book of reference (From laurent's reference):

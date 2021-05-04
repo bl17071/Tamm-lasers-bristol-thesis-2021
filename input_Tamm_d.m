@@ -1,14 +1,17 @@
 %Original main code by Laurent Nevou
 %Github repository link: https://github.com/LaurentNevou
+
 %Link for specific code:
 %https://github.com/LaurentNevou/Light_WaveTransmission1D_dispersion
+
 %All material values for refractive index and extinction coefficient is
 %taken from refractiveindex.info
+
 %Modifications from source code: 
 %Added data dispersion for silver and gold and their respective plot
 %Added a spacer layer, length of metal and spacer layer were also added
 %Changed the arrangement of the structure from VCSEL to Tamm
-
+%Changed the values of input parameter of central wavelength
 
 
 nL=1; %default value 1
