@@ -2,6 +2,12 @@
 %Github repository link: https://github.com/LaurentNevou
 %Link for this code:
 %https://github.com/LaurentNevou/Light_WaveTransmission1D_dispersion
+
+%Main book of reference (From laurent's reference):
+% Igor A. Sukhoivanov and Igor V. Guryev
+% Photonic Cristals: Physical and Practical Modeling
+% Chap3: Fundamentals of Computation of Photonic Crystal Characteristics
+
 %Modifications from source code: No modifications were made aside from a few comments.
 
 % TMM code
